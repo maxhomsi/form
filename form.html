@@ -1,85 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
-    <form action="results.html" method="GET" enctype="multipart/form-data">
-        <h1>Contact Form 
-            <span>Please fill all the texts in the fields.</span></h1>
-       
 
-        <div>
-        <span><label for="name">Name</label></span>
-        <input type="text" name="name" id="name" >
-    </div>
-    <div>
-      <span><label for="email">Email</label></span>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div >
-      <span><label for="age">Age Group:</label></span>
-      
-        <input type="radio" id="0-10" name="age" value="0-10" checked>
-        <label for="0-10">0-10</label>
+  <form action="results.html" method="GET" enctype="multipart/form-data">
 
-      
-   
-        <input type="radio" id="11-30" name="age" value="11-30">
-        <label for="11-30">11-30</label>
-     
-        <input type="radio" id="31-100" name="age" value="31-100">
-        <label for="31-100">31-100</label>
-      
-      
+
+
+    <!-- formulário de contacto utilizando html e css -->
+
+    <div class="contact_form">
+      <div class="formulario">
+        <h1>Contact Form:</h1>
+        <h3>Please fill all the texts in the fields.</h3>
+
+
+        <form action="submeter-formulario.php" method="post">
+
+
+          <p>
+            <label for="name" class="insertname">Name
+              <span class="obrigatorio">*</span>
+            </label>
+            <input type="text" name="Name" id="nome" required="obrigatorio" placeholder="Full name">
+          </p>
+
+          <p>
+            <label for="email" class="colocar_email">Email
+              <span class="obrigatorio">*</span>
+            </label>
+            <input type="email" name="e-mail" id="email" required="obrigatorio" placeholder="E-Mail">
+          </p>
+
+          <p>
+            <label for="phone" class="phone">Phone Number:
+            </label>
+            <input type="tel" name="Phone_Number" id="telefone" placeholder="Phone Number">
+          </p>
+          <p><label for="age" class="age">Age:</label>
+          <div class="age"><input type="radio" id="under_21" value="under_21" name="user_age">
+            <label for="under_21" class="light">Under 21</label><br>
+            <input type="radio" id="over_21" value="over_21" name="user_age">
+            <label for="over_21" class="light">Over 21</label>
+            </p>
+          </div>
+          <p>
+          
+
+            <label for="job">Where did you hear about us?</label>
+          <select id="job" name="source">
+            <optgroup label="Web">
+              <option value="Google">Google</option>
+              <option value="linkedin">Linkedin</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Friend">Friend</option>
+            
+            </optgroup>
+            
+          </p>
+
+
+          <p>
+            <label for="mensagem" class="colocar_mensagem">Mensagem
+              <span class="obrigatorio">*</span>
+            </label>
+            <textarea name="Message" class="message" id="mensagem" required="obrigatorio"
+              placeholder="Your Message"></textarea>
+          </p>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <p class="aviso">
+            <span class="obrigatorio"> * </span>Mandatory.
+          </p>
+
+        </form>
+      </div>
     </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Where did you hear about us?
-      <div>
-        <label for="linkedin">Linkedin</label>
-        <input type="checkbox" name="linkedin" id="linkedin">
-      </div>
-      <div>
-        <label for="facebook">Facebook</label>
-        <input type="checkbox" name="facebook" id="facebook">
-      </div>
-      <div>
-        <label for="instagram">Instagram</label>
-        <input type="checkbox" name="instagram" id="instagram">
-      </div>
-      <div>
-        <label for="google">Google</label>
-        <input type="checkbox" name="google" id="google">
-      </div>
-    </div>
-    
-    <div>
-      Gender
-      <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
-      </div>
-      <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
-      </div>
-      <div>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
-      </div>
-    </div>
-    
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-  </form>
+
+
+ 
   <!-- <script src="scripts.js"></script>  PQ NAO PRECISOU CARREGAR ESSE SCRIPT-->
 </body>
+
 </html>
