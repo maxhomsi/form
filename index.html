@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <h1>Contact Form 
+            <span>Please fill all the texts in the fields.</span></h1>
+       
+
+        <div>
+        <span><label for="name">Name</label></span>
+        <input type="text" name="name" id="name" >
+    </div>
+    <div>
+      <span><label for="email">Email</label></span>
+      <input type="email" name="email" id="email" >
+    </div>
+    <div >
+      <span><label for="age">Age Group:</label></span>
+      
+        <input type="radio" id="0-10" name="age" value="0-10" checked>
+        <label for="0-10">0-10</label>
+
+      
+   
+        <input type="radio" id="11-30" name="age" value="11-30">
+        <label for="11-30">11-30</label>
+     
+        <input type="radio" id="31-100" name="age" value="31-100">
+        <label for="31-100">31-100</label>
+      
+      
+    </div>
+    <div>
+      <label for="date">Birthdate</label>
+      <input type="date" name="date" id="date" min="2019-06-10">
+    </div>
+    <div>
+      Where did you hear about us?
+      <div>
+        <label for="linkedin">Linkedin</label>
+        <input type="checkbox" name="linkedin" id="linkedin">
+      </div>
+      <div>
+        <label for="facebook">Facebook</label>
+        <input type="checkbox" name="facebook" id="facebook">
+      </div>
+      <div>
+        <label for="instagram">Instagram</label>
+        <input type="checkbox" name="instagram" id="instagram">
+      </div>
+      <div>
+        <label for="google">Google</label>
+        <input type="checkbox" name="google" id="google">
+      </div>
+    </div>
+    
+    <div>
+      Gender
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+      </div>
+      <div>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </div>
+      <div>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+      </div>
+    </div>
+    
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+  <!-- <script src="scripts.js"></script>  PQ NAO PRECISOU CARREGAR ESSE SCRIPT-->
+</body>
+</html>
