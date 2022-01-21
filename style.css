@@ -24,15 +24,12 @@ body{
 
 
 .age{
-	font-size: 13px;  
+
 	color: #0e0e0e;  
     display: flex
-	
-	
-    
+
 }
     
-
 .contact_form{	
 	width: 450px; 
   height: auto;
